@@ -7,7 +7,9 @@ const Display = (props) => {
         <div className='sport-info'>
             <img src={img} alt="" />
             <p className='sport-name'>{name}</p>
-            <p></p>
+            <p> <small>{description}</small> </p>
+            <p> <small>Age: {age}</small> </p>
+            <p> <small>Time: {time}</small> </p>
         </div>
     );
 };

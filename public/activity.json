@@ -11,7 +11,7 @@
     {
         "id": "2",
         "name": "Cricket",
-        "description": "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. ",
+        "description": "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20 meter pitch with a wicket at each end, each comprising two bails balanced on three stumps. ",
         "age": "8-35",
         "time": "300min",
         "img": "https://cdn.britannica.com/63/211663-050-A674D74C/Jonny-Bairstow-batting-semifinal-match-England-Australia-2019.jpg"
@@ -35,7 +35,7 @@
     {
         "id": "5",
         "name": "Badmintion",
-        "description": "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are singles (with one player per side) and doubles (with two players per side).",
+        "description": "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are singles and doubles.",
         "age": "8-35",
         "time": "90min",
         "img": " https://news.cgtn.com/news/2021-05-23/Reform-of-badminton-scoring-system-fails-to-pass-in-BWF-10vjMSvDOUM/img/13facbf2b5f247d9824df627f85afd0e/13facbf2b5f247d9824df627f85afd0e.jpeg"
@@ -43,7 +43,7 @@
     {
         "id": "6",
         "name": "Tennis",
-        "description": "Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles).",
+        "description": "Tennis is a racket sport that is played either individually against a single opponent  or between two teams of two players each.",
         "age": "8-35",
         "time": "90min",
         "img": "https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/ufqgtgmmdvwrcqavdrhw "
