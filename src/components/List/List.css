@@ -1,0 +1,22 @@
+.list-cart{
+    position: sticky;
+    top: 0;
+}
+.personal-info{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid limegreen;
+    border-radius: 25px;
+    background-color: gray;
+}
+.personal-details{
+    background-color: white;
+    border-radius: 70px;
+    padding: 10px;
+    color: steelblue;
+}
+.break-time{
+    display: flex;
+    justify-content: space-evenly;
+}

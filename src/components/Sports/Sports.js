@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Display from '../Display/Display';
-import Trainer from '../../trainer.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocation } from '@fortawesome/free-solid-svg-icons';
+
 import './Sports.css'
+import List from '../List/List';
 
 const Sports = () => {
     const [sports,setSports] = useState([]);
@@ -35,18 +34,8 @@ const Sports = () => {
             </div>
 
             <div className='task-bar'>
-                
-                <h2>Selected items: {list.length}</h2>
-
-                <div className='trainer-info'>
-                    <img src={Trainer} alt="" />
-                    <h2>Ashfaq Hossain</h2>
-                </div>
-                <div className='trainer-location'>
-                    <FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>
-                    <p><small>Sydney, Australia</small></p>
-                </div>
-
+                <List 
+                list= {list}></List>
             </div>
         </div>
     );

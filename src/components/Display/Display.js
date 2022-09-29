@@ -12,8 +12,8 @@ const Display = (props) => {
             <div className='sport-info'>
                 <p className='sport-name'>{name}</p>
                 <p> <small>{description}</small> </p>
-                <p> <small>Age: {age}</small> </p>
-                <p> <small>Time: {time}</small> </p>
+                <p> <small>Age: {age} Years</small> </p>
+                <p> <small>Time: {time} Min</small> </p>
             </div>
             <button onClick={ () => handleAddToList(sport)} className='btn-cart'>
                 <p>Add to List</p>

@@ -15,7 +15,6 @@
 }
 
 .task-bar img{
-    margin-top: 10px;
     width: 50px;
     height: 50px;
 }
@@ -24,18 +23,20 @@
     display: flex;
 }
 .trainer-info h2{
+    margin-top: 0;
     margin-left: 10px;
+    margin-bottom: 0;
     
 }
 .trainer-location{
     display: flex;
     align-items: center;
     margin-left: 70px;
+    margin-top: 0;
 }
 .trainer-location p{
     align-items: center;
-    margin-left: 5px;
-    margin-top: 0;
+    margin-left: 2px;
 }
 
 /* @media only screen and (min-width: 375) and (max-width: 650){
