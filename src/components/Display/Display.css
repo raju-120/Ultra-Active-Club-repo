@@ -1,14 +1,37 @@
-.sport-info{
+.display-sport{
     width: 300px;
     height: 510px;
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    position: relative;
 }
-.sport-info img{
+.display-sport img{
     width: 300px;
     height: 250px;
+    border-radius: 10px;
 }
 .sport-name{
     font-family: fantasy;
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
+    margin-top: 7px;
+}
+.sport-info{
+    margin:0 14px;
+}
+.sport-info p{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.btn-cart{
+    width: 100%;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.btn-cart:hover{
+    background-color: lightseagreen;
 }

@@ -9,7 +9,11 @@ const Sports = () => {
         fetch('activity.json')
         .then(res => res.json())
         .then(data => setSports(data))
-    }, [])
+    }, []);
+
+    const handleAddToList = (sport) =>{
+        console.log(sport)
+    }
 
     return (
         <div className='sports-container'>
@@ -18,6 +22,7 @@ const Sports = () => {
                     sports.map(sport => <Display
                     key={sport.id}
                     sport={sport}
+                    handleAddToList={handleAddToList}
                     ></Display>)
                 }
             </div>
