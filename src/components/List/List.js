@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Trainer from '../../trainer.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './List.css'
 
 const List = (props) => {
@@ -9,7 +11,18 @@ const List = (props) => {
 
     const {breakTime, setBreakTime} = useState();
     
-
+    const notify = () => {
+        toast.success('Congratulation for Completing Your Activity! ',  {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+        
+    }
 
     const handleBreakTime = () =>{
         const newBreakTime = breakTime ;
@@ -67,7 +80,8 @@ const List = (props) => {
                         <h4 className='exercise-head'>Exercise details: {total} Sec</h4>
                         <h4 className='exercise-head'>Break Time: </h4>
                     </div>
-                    <button className='btn-complete'>Activity Completed</button>
+                    <button onClick={notify} className='btn-complete'>Activity Completed</button>
+                    <ToastContainer />
                 </div>
 
         </div>

@@ -19,6 +19,9 @@ const Sports = () => {
         setList(newList);
     }
     
+    
+    
+    
 
     return (
         <div className='sports-container'>
