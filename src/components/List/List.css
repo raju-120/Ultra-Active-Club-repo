@@ -16,7 +16,34 @@
     padding: 10px;
     color: steelblue;
 }
-.break-time{
+.btn-breaktime{
     display: flex;
     justify-content: space-evenly;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 15px;
+}
+.btn-break{
+    color:black;
+    border-radius: 25px;
+    padding: 10px;
+}
+.btn-break:hover{
+    background-color: goldenrod;
+}
+
+.exercise-head{
+    background-color: aliceblue;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+}
+.btn-complete{
+    width: 100%;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 15px;
+}
+.btn-complete:hover{
+    background-color: goldenrod;
 }

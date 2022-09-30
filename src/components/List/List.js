@@ -37,15 +37,24 @@ const List = ({list}) => {
 
                 <div>
                     <h2>Add A Break</h2>
-                    <div className='break-time'>
-                        <button>
-                            <p>120s</p>
-                        </button>
-                        <button>180s</button>
-                        <button>240s</button>
-                        <button>300s</button>
+                    <div className='btn-breaktime'>
+
+                        <button className='btn-break'>120s</button>
+                        <button className='btn-break'>180s</button>
+                        <button className='btn-break'>240s</button>
+                        <button className='btn-break'>300s</button>
                     </div>
                 </div>
+
+                <div>
+                    <h3>Exercise Details</h3>
+                    <div>
+                        <h2 className='exercise-head'>Exercise details: </h2>
+                        <h3 className='exercise-head'>Break Time: </h3>
+                    </div>
+                    <button className='btn-complete'>Activity Completed</button>
+                </div>
+
         </div>
     );
 };

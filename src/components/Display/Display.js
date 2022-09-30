@@ -13,7 +13,7 @@ const Display = (props) => {
                 <p className='sport-name'>{name}</p>
                 <p> <small>{description}</small> </p>
                 <p> <small>Age: {age} Years</small> </p>
-                <p> <small>Time: {time} Min</small> </p>
+                <p> <small>Time: {time} Sec</small> </p>
             </div>
             <button onClick={ () => handleAddToList(sport)} className='btn-cart'>
                 <p>Add to List</p>
