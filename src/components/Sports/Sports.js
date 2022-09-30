@@ -14,8 +14,7 @@ const Sports = () => {
         .then(data => setSports(data))
     }, []);
 
-    const handleAddToList = (sport) =>{ 
-        console.log(sport);
+    const handleAddToList = (sport) =>{
         const newList = [...list, sport];
         setList(newList);
     }

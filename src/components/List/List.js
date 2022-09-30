@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Trainer from '../../trainer.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import './List.css'
 
-const List = ({list}) => {
+const List = (props) => {
+    const {list} = props;
+
+    const {breakTime, setBreakTime} = useState();
+    
+
+
+    const handleBreakTime = () =>{
+        const newBreakTime = breakTime ;
+        setBreakTime(newBreakTime);
+    }
+        let total = 0;
+    for(const display of list) {
+        total = total + parseInt(display.time);
+    }
+
     return (
         <div className='list-cart'>
             
@@ -39,18 +54,18 @@ const List = ({list}) => {
                     <h2>Add A Break</h2>
                     <div className='btn-breaktime'>
 
-                        <button className='btn-break'>120s</button>
-                        <button className='btn-break'>180s</button>
-                        <button className='btn-break'>240s</button>
-                        <button className='btn-break'>300s</button>
+                        <button onClick={() => handleBreakTime} className='btn-break'>120s</button>
+                        <button onClick={handleBreakTime} className='btn-break'>180s</button>
+                        <button onClick={handleBreakTime} className='btn-break'>240s</button>
+                        <button onClick={handleBreakTime} className='btn-break'>300s</button>
                     </div>
                 </div>
 
                 <div>
                     <h3>Exercise Details</h3>
                     <div>
-                        <h2 className='exercise-head'>Exercise details: </h2>
-                        <h3 className='exercise-head'>Break Time: </h3>
+                        <h4 className='exercise-head'>Exercise details: {total} Sec</h4>
+                        <h4 className='exercise-head'>Break Time: </h4>
                     </div>
                     <button className='btn-complete'>Activity Completed</button>
                 </div>
