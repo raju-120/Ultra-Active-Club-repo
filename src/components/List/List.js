@@ -24,7 +24,8 @@ const List = (props) => {
         
     }
 
-    const handleBreakTime = () =>{
+    const handleBreakTime = (props) =>{
+        console.log(props)
         const newBreakTime = breakTime ;
         setBreakTime(newBreakTime);
     }

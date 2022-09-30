@@ -5,8 +5,18 @@ import './Sports.css'
 import List from '../List/List';
 
 const Sports = () => {
+    const breakTime = [
+        {time: 120, id:1},
+        {time: 180, id:2},
+        {time: 240, id:3},
+        {time: 300, id:4},
+    ]
+    
+
     const [sports,setSports] = useState([]);
     const [list, setList] = useState([]);
+
+    
 
     useEffect( () =>{
         fetch('activity.json')
@@ -19,7 +29,7 @@ const Sports = () => {
         setList(newList);
     }
     
-    
+
     
     
 
